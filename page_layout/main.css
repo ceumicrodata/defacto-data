@@ -1,0 +1,87 @@
+body { 
+  font-size: 10pt;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: #505050;
+  background-color: #bbbbbb; 
+  background-image: url('ceumicrodata_background.png');
+  background-position:center top;
+}
+
+div {
+  margin: 0px;
+}
+
+#centeredContainer {
+  position: absolute;
+  width: 720pt;
+  margin-left: -360pt;
+  top: 0px;
+  left: 50%;
+}
+
+#ceumicrodata_logo {
+  margin-top: 28px;
+  margin-bottom: 29px;
+}
+
+.whiteBox {
+  margin-top: 171px;
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #F9F9F9;   
+}
+
+.mainTitle {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.mainTitle h1{ /* Graphing App */
+  font-size: 22pt;
+  font-weight: 300;
+  margin: 0px;
+  margin-top: -5pt;
+}
+
+.mainTitle h4{  /* CEU Microdata */
+  font-size: 11pt;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.chartContainer {
+  position: absolute;
+  right: 40pt;
+  top: 60pt;
+  left: 20pt;
+  bottom: 20pt;
+  background-color: #FFFFFF;  
+  border-top: 1px solid #dddddd;
+}
+
+.chartShareButtons {
+  position: absolute;
+  top: 100pt;
+  left: 680pt;
+  right: 10pt;
+  bottom: 10pt;
+}
+.chartShareArea {
+  z-index: 100;
+  border: 1px solid #eeeeee;
+  position: absolute;
+  background-color: #FFFFFF;  
+  height: 30px;
+  width: 200px;
+  right: 40pt;
+  display: none;
+
+}
+
+#shareFacebookArea   {   top: 100pt; }
+#shareGooglePlusArea {   top: 125pt; }
+#shareTwitterArea    {   top: 150pt; }
+#shareThumbirArea    {   top: 175pt; }
