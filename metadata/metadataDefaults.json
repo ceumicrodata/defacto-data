@@ -1,0 +1,24 @@
+{ 
+  "dateFormat" : "%Y-%m", 
+  "dateMin"  : "1990-01" ,   
+  "dateMax"  : "2013-03" , 
+  "dateFrom" : "2003-03" ,
+  "dateTo"   : "2013-03" ,
+  "timeAxis" : {
+    "tickCount": 8, 
+    "subdivide" : 0,   
+    "tickFormat": "dateAxisDefault"
+  }, 
+  "valueAxis" : {
+    "tickCount": 5, 
+    "subdivide" : 1,   
+    "tickFormat": "valueAxisDefault",
+    "maxValue" : "maxValueDefault",
+    "minValue" : "minValueDefault"
+  },            
+  "legend" : {
+    "showBarChart" : true,         
+    "dateOfBarChart" : "2012-01" 
+  },         
+  "tooltipText" : "simpleTooltip"
+}

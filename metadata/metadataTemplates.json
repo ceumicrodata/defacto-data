@@ -1,0 +1,64 @@
+{
+  "shadedIntervals" : {
+     "governments" : [
+          {
+            "label" :    "gov1" ,  
+            "tooltip" :  "gov1" ,  
+            "dateFrom" : "1990-04" , 
+            "dateTo" :   "1994-04" , 
+            "color" :    "#ffdddd"   
+          },
+          {
+            "label" :    "gov2" ,  
+            "tooltip" :  "gov2" ,  
+            "dateFrom" : "1998-04" , 
+            "dateTo" :   "2002-04" , 
+            "color" :    "#ddffdd"   
+          }
+      ]
+   },
+
+   "queryDetails" : {
+      "referenceCountry" : { 
+          "isVisible" : "*",  
+          "tableName" : "countries",
+          "serieKey"  : "country", 
+          "dateKey"   : "date",     
+          "filter"    : "`country` = 'hungary'", 
+          "color"     : "#ff0000", 
+          "thickness" : 4, 
+          "onClick"   : 0      
+      },
+      "regions" : { 
+          "isVisible" : "", 
+          "tableName" : "regions", 
+          "serieKey"  : "region", 
+          "dateKey"   : "date",     
+          "color"     : "colorTable0",
+          "thickness" : 2, 
+          "onClick"   : 1    
+      },
+      "v4" : { 
+          "isVisible" : "v4", 
+          "tableName" : "countries", 
+          "serieKey"  : "country",    
+          "dateKey"   : "date",        
+          "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+          "filter"    : "`region` = 'v4'",    
+          "color"     : "colorTable1",
+          "thickness" : 2,        
+          "onClick"   : 0      
+      }, 
+      "eu15" : { 
+          "isVisible" : "eu15", 
+          "tableName" : "countries", 
+          "serieKey"  : "country", 
+          "dateKey"   : "date",     
+          "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+          "filter"    : "`region` = 'eu15'",    
+          "color"     : "colorTable2",
+          "thickness" : 2,        
+          "onClick"   : 0           
+      } 
+    }
+}

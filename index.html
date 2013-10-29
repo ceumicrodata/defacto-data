@@ -126,10 +126,20 @@
      };
        
   var globalMetadata = null;
+  var globalMetadataTemplates = null;
+  var globalMetadataDefaults = null;
+  
   var pars = getMainUrlSearchParams();
   d3.json("metadata/metadata.json", function(json) {
     globalMetadata = json;
-    changeChart (pars.chartPath ? pars.chartPath : "");
+    d3.json("metadata/metadataTemplates.json", function(templatesJson) {
+       globalMetadataTemplates = templatesJson;
+       d3.json("metadata/metadataDefaults.json", function(defaultsJson) {
+          globalMetadataDefaults = defaultsJson;
+          changeChart (pars.chartPath ? pars.chartPath : "");
+       });
+    });
+
   });
   
   

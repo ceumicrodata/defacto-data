@@ -9,105 +9,29 @@
           "Magyarország a visegrádi országokkal és az Európai Unió első 15 országával összehasonlítva. Forrás: Eurostat. "
         ],
 
-        "dateFormat" : "%Y-%m", 
         "valueFormat" : ".1f", 
 
-        "dateMin"  : "1990-01" ,   
-        "dateMax"  : "2013-03" , 
         "valueMin" : 4,
         "valueMax" : 16,
 
-        "dateFrom" : "2003-03" ,
-        "dateTo"   : "2013-03" ,
-        
-        "timeAxis" : {
-          "tickCount": 8, 
-          "subdivide" : 0,   
-          "tickFormat": "dateAxisDefault"
-        }, 
-        "valueAxis" : {
-          "tickCount": 5, 
-          "subdivide" : 1,   
-          "tickFormat": "valueAxisDefault",
-          "maxValue" : "maxValueDefault",
-          "minValue" : "minValueDefault"
-        },            
-        "legend" : {
-          "showBarChart" : true,         
-          "dateOfBarChart" : "2012-01" 
-        }, 
-        
-        "tooltipText" : "simpleTooltip" ,
-  
-        "shadedIntervals" : [
-          {
-            "label" :    "shade1" ,  
-            "tooltip" :  "shade1" ,  
-            "dateFrom" : "1990-04" , 
-            "dateTo" :   "1994-04" , 
-            "color" :    "#ffdddd"   
-          },
-          {
-            "label" :    "shade2" ,  
-            "tooltip" :  "shade2" ,  
-            "dateFrom" : "1998-04" , 
-            "dateTo" :   "2002-04" , 
-            "color" :    "#ddffdd"   
-          },
-          {
-            "label" :    "shade3" ,  
-            "tooltip" :  "shade3" ,  
-            "dateFrom" : "2010-04" , 
-            "dateTo" :   "2014-04" , 
-            "color" :    "#ddddff"     
-          }   
-        ], 
+        "shadedIntervals" : "governments", 
         
         "queries" : [
           {    
-            "isVisible" : "*",  
-            "tableName" : "countries",
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "filter"    : "`country` = 'hungary'", 
-            "color"     : "#ff0000", 
-            "thickness" : 4, 
-            "onClick"   : 0         
+            "queryDetails" : "referenceCountry"
           },
           {
-            "isVisible" : "", 
-            "tableName" : "regions", 
-            "serieKey"  : "region", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "color"     : "colorTable0",
-            "thickness" : 2, 
-            "onClick"   : 1        
+            "queryDetails" : "regions"
           },
           {
-            "isVisible" : "v4", 
-            "tableName" : "countries", 
-            "serieKey"  : "country",    
-            "dateKey"   : "date",        
             "valueKey"  : "uemp",       
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'v4'",    
-            "color"     : "colorTable1",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : "v4"
           }, 
           {
-            "isVisible" : "eu15", 
-            "tableName" : "countries", 
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'eu15'",    
-            "color"     : "colorTable2",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : "eu15"   
           } 
         ]
       },
@@ -176,49 +100,57 @@
         
         "queries" : [
           {    
-            "isVisible" : "*",  
-            "tableName" : "countries",
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "filter"    : "`country` = 'hungary'", 
-            "color"     : "#ff0000", 
-            "thickness" : 4, 
-            "onClick"   : 0         
+            "queryDetails" : { 
+              "isVisible" : "*",  
+              "tableName" : "countries",
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "filter"    : "`country` = 'hungary'", 
+              "color"     : "#ff0000", 
+              "thickness" : 4, 
+              "onClick"   : 0  
+            }       
           },
           {
-            "isVisible" : "", 
-            "tableName" : "regions", 
-            "serieKey"  : "region", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "color"     : "colorTable0", 
-            "thickness" : 2, 
-            "onClick"   : 1        
+            "queryDetails" : { 
+              "isVisible" : "", 
+              "tableName" : "regions", 
+              "serieKey"  : "region", 
+              "dateKey"   : "date",     
+              "color"     : "colorTable0", 
+              "thickness" : 2, 
+              "onClick"   : 1    
+            }    
           },
           {
-            "isVisible" : "v4", 
-            "tableName" : "countries", 
-            "serieKey"  : "country",    
-            "dateKey"   : "date",        
             "valueKey"  : "uemp",       
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'v4'",    
-            "color"     : "colorTable1",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : { 
+              "isVisible" : "v4", 
+              "tableName" : "countries", 
+              "serieKey"  : "country",    
+              "dateKey"   : "date",        
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'v4'",    
+              "color"     : "colorTable1",
+              "thickness" : 2,        
+              "onClick"   : 0  
+            }         
           }, 
           {
-            "isVisible" : "eu15", 
-            "tableName" : "countries", 
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'eu15'",    
-            "color"     : "colorTable2",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : { 
+              "isVisible" : "eu15", 
+              "tableName" : "countries", 
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'eu15'",    
+              "color"     : "colorTable2",
+              "thickness" : 2,        
+              "onClick"   : 0   
+            }        
           } 
         ]
       }
@@ -292,49 +224,56 @@
         
         "queries" : [
           {    
-            "isVisible" : "*",  
-            "tableName" : "countries",
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "filter"    : "`country` = 'hungary'", 
-            "color"     : "#ff0000", 
-            "thickness" : 4, 
-            "onClick"   : 0         
+            "queryDetails" : { 
+              "tableName" : "countries",
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "filter"    : "`country` = 'hungary'", 
+              "color"     : "#ff0000", 
+              "thickness" : 4, 
+              "onClick"   : 0     
+            }    
           },
           {
-            "isVisible" : "", 
-            "tableName" : "regions", 
-            "serieKey"  : "region", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "color"     : "colorTable0",
-            "thickness" : 2, 
-            "onClick"   : 1        
+            "queryDetails" : { 
+              "isVisible" : "", 
+              "tableName" : "regions", 
+              "serieKey"  : "region", 
+              "dateKey"   : "date",     
+              "color"     : "colorTable0",
+              "thickness" : 2, 
+              "onClick"   : 1 
+            }       
           },
           {
-            "isVisible" : "v4", 
-            "tableName" : "countries", 
-            "serieKey"  : "country",    
-            "dateKey"   : "date",        
             "valueKey"  : "uemp",       
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'v4'",    
-            "color"     : "colorTable1",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : { 
+              "isVisible" : "v4", 
+              "tableName" : "countries", 
+              "serieKey"  : "country",    
+              "dateKey"   : "date",        
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'v4'",    
+              "color"     : "colorTable1",
+              "thickness" : 2,        
+              "onClick"   : 0   
+            }        
           }, 
           {
-            "isVisible" : "eu15", 
-            "tableName" : "countries", 
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'eu15'",    
-            "color"     : "colorTable2",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : { 
+              "isVisible" : "eu15", 
+              "tableName" : "countries", 
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'eu15'",    
+              "color"     : "colorTable2",
+              "thickness" : 2,        
+              "onClick"   : 0 
+            }          
           } 
         ]
       },
@@ -404,49 +343,57 @@
         
         "queries" : [
           {    
-            "isVisible" : "*",
-            "tableName" : "countries",
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "filter"    : "`country` = 'hungary'", 
-            "color"     : "#ff0000", 
-            "thickness" : 4, 
-            "onClick"   : 0         
+            "queryDetails" : { 
+              "isVisible" : "*",
+              "tableName" : "countries",
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "filter"    : "`country` = 'hungary'", 
+              "color"     : "#ff0000", 
+              "thickness" : 4, 
+              "onClick"   : 0 
+            }        
           },
           {
-            "isVisible" : "", 
-            "tableName" : "regions", 
-            "serieKey"  : "region", 
-            "dateKey"   : "date",     
             "valueKey"  : "uemp",  
-            "color"     : "colorTable0", 
-            "thickness" : 2, 
-            "onClick"   : 1        
+            "queryDetails" : { 
+              "isVisible" : "", 
+              "tableName" : "regions", 
+              "serieKey"  : "region", 
+              "dateKey"   : "date",     
+              "color"     : "colorTable0", 
+              "thickness" : 2, 
+              "onClick"   : 1   
+            }     
           },
           {
-            "isVisible" : "v4", 
-            "tableName" : "countries", 
-            "serieKey"  : "country",    
-            "dateKey"   : "date",        
             "valueKey"  : "uemp",       
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'v4'",    
-            "color"     : "colorTable1",
-            "thickness" : 2,        
-            "onClick"   : 0           
+            "queryDetails" : { 
+              "isVisible" : "v4", 
+              "tableName" : "countries", 
+              "serieKey"  : "country",    
+              "dateKey"   : "date",        
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'v4'",    
+              "color"     : "colorTable1",
+              "thickness" : 2,        
+              "onClick"   : 0    
+            }       
           }, 
           {
-            "isVisible" : "eu15", 
-            "tableName" : "countries", 
-            "serieKey"  : "country", 
-            "dateKey"   : "date",     
-            "valueKey"  : "uemp",  
-            "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-            "filter"    : "`region` = 'eu15'",    
-            "color"     : "colorTable2",
-            "thickness" : 2,        
-            "onClick"   : 0           
+             "valueKey"  : "uemp",  
+             "queryDetails" : { 
+              "isVisible" : "eu15", 
+              "tableName" : "countries", 
+              "serieKey"  : "country", 
+              "dateKey"   : "date",     
+              "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+              "filter"    : "`region` = 'eu15'",    
+              "color"     : "colorTable2",
+              "thickness" : 2,        
+              "onClick"   : 0   
+            }        
           } 
         ]
 

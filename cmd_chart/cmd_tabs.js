@@ -116,7 +116,7 @@ globalStateManager.changeChartFunction = function(stateData) {
   }
   
   if (mainKey == null || subKey == null || !globalMetadata[mainKey] || !globalMetadata[mainKey].charts[subKey]) {
-    alert ("Can't change chart to ["+mainKey+"_"+subKey+"]");
+    alert ("Can't load chart ["+mainKey+"_"+subKey+"]");
     return;
   }
 
@@ -128,5 +128,6 @@ globalStateManager.changeChartFunction = function(stateData) {
   var chartMetaData = globalMetadata[mainKey].charts[subKey]; 
   var validChartPath = mainKey + "_" + subKey;
   d3.select(".chartContainer").html("");
-  d3.select("#chart1").call(cmd_chart, validChartPath, chartMetaData, globalSettings, globalStateManager);
+  d3.select("#chart1").call(cmd_chart, validChartPath, chartMetaData, 
+     globalMetadataTemplates, globalMetadataDefaults, globalSettings, globalStateManager);
 }

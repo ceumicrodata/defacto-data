@@ -1,6 +1,28 @@
   
-function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, useUrlSearchParams ) {
+function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDefaults, appSettings, stateManager, useUrlSearchParams ) {
 
+  function applyMetadataDefaults() {
+    for (var key in metadataDefaults) {
+      if (metaData[key] === undefined)
+          metaData[key] = metadataDefaults[key];      
+    }
+  }
+
+  function applyMetadataTemplates(obj) {
+    if (Array.isArray(obj)) {
+      for (var i = 0; i<obj.length; i++)
+        applyMetadataTemplates(obj[i]);
+    } else if (typeof obj == "object") {
+      for (var key in obj) {
+        if (metadataTemplates[key] !== undefined && typeof (obj[key]) == "string"
+            && metadataTemplates[key][obj[key]] !== undefined) {
+          console.log("Metadata template replacement: " + key + ":" + [obj[key]]);
+          obj[key] = metadataTemplates[key][obj[key]]; 
+        }
+        applyMetadataTemplates(obj[key]);        
+      }
+    }
+  }
   ////////////////////////////////
   
   function getUrlSearchParams() {
@@ -32,8 +54,10 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
   var previousMaxValue = false;
 
   selection.select(".chartContainer").each(function () {
-  
-  
+   
+      applyMetadataDefaults();
+      applyMetadataTemplates(metaData);
+
       function completeStateData(stateData) {
         if (stateData.keyPath === undefined)
             stateData.keyPath = currentPath.getPath();
@@ -105,7 +129,7 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
             var currentKeyPath = currentPath.getPath();
             var queries = new Array();
             for (var i = 0; i < metaData.queries.length; i++) {
-              if (isSerieVisible(metaData.queries[i].isVisible, currentKeyPath))
+              if (isSerieVisible(metaData.queries[i].queryDetails.isVisible, currentKeyPath))
                 queries.push(metaData.queries[i]);
             }
             return queries;
@@ -131,16 +155,16 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
 
           function queryAndDraw(query) {
 
-              var url = "server?table="+query.tableName
-                            +"&dateKey="+query.dateKey
-                            +"&serieKey="+query.serieKey
+              var url = "server?table="+query.queryDetails.tableName
+                            +"&dateKey="+query.queryDetails.dateKey
+                            +"&serieKey="+query.queryDetails.serieKey
                             +"&valueKey="+query.valueKey
                             +"&from="+dateFrom
                             +"&to="+dateTo;
-              if (query.filter)
-                url +="&filter=" + encodeURIComponent(query.filter);
-              if (query.join)
-                url +="&join="+ encodeURIComponent(query.join);                     
+              if (query.queryDetails.filter)
+                url +="&filter=" + encodeURIComponent(query.queryDetails.filter);
+              if (query.queryDetails.join)
+                url +="&join="+ encodeURIComponent(query.queryDetails.join);                     
     
               console.log("AJAX Query: " + url);
               d3.json(url, function (data) {
@@ -148,27 +172,27 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
                   //loading data
                   var currentKeyPath = currentPath.getPath();
                   var serieCounter = 0;
-                  var table = data[query.tableName];
+                  var table = data[query.queryDetails.tableName];
                   var processedSeries = new Object();
                   for (var i = 0; i < table.length; i++) {
-                      var ID = table[i][query.serieKey];
-                      var key = table[i][query.serieKey]; //currentKeyPath == "" ? ID : currentKeyPath + "/" + ID;
+                      var ID = table[i][query.queryDetails.serieKey];
+                      var key = table[i][query.queryDetails.serieKey]; 
                       if (!series[key]) {
                           series[key] = new Array();
                           series[key].ID = ID;
                           series[key].name = _T (ID);
                           series[key].keyPath = currentKeyPath;
-                          series[key].onClick = query.onClick;
-                          series[key].color = colorFunctions[query.color] ? colorFunctions[query.color](serieCounter) : query.color;
-                          series[key].thickness = (typeof (query.thickness) == "function") ? query.thickness(key) : query.thickness;
-                          series[key].isVisible = query.isVisible;
+                          series[key].onClick = query.queryDetails.onClick;
+                          series[key].color = colorFunctions[query.queryDetails.color] ? colorFunctions[query.queryDetails.color](serieCounter) : query.queryDetails.color;
+                          series[key].thickness = (typeof (query.queryDetails.thickness) == "function") ? query.queryDetails.thickness(key) : query.queryDetails.thickness;
+                          series[key].isVisible = query.queryDetails.isVisible;
                           series[key].parentSerie = currentPath.getLastKey();
                           
                           console.log("Serie added:" + key +"(" + serieCounter +")");
                           serieCounter ++;
                       }
 
-                      var date = d3.time.format(metaData.dateFormat).parse(table[i][query.dateKey]).getTime();
+                      var date = d3.time.format(metaData.dateFormat).parse(table[i][query.queryDetails.dateKey]).getTime();
                       var value = table[i][query.valueKey];
                       var defined = table[i].defined;
 
@@ -212,7 +236,6 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
 
           zoomTimer = false;
           
-          
           if (stateData.keyPath === undefined)
             stateData.keyPath = "";
           if (stateData.isZoom === undefined)
@@ -224,26 +247,10 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
             
           var currentKeyPath = currentPath.getPath();
  
-          if (stateData.keyPath != currentKeyPath) {
-              
+          if (stateData.keyPath != currentKeyPath)               
               currentPath.setPath(stateData.keyPath);
-          
-              /*var newPath = new chartPath(stateData.keyPath);
-              var newLevelIndex = newPath.getLevelIndex();
-              if (newLevelIndex < 0 && newLevelIndex >= metaData.levels.length) {
-                  console.log("Invalid level: " + newLevelIndex);
-                  return;
-              } else {
-                  currentPath.setPath(stateData.keyPath);
-                  currentLevel = metaData.levels[newLevelIndex];
-              }*/
-          }
-
 
           scalesTime.domain([new Date(stateData.timeFrom), new Date(stateData.timeTo)]);
-
-
-
               
           var from = stateData.timeFrom;
           var to   = stateData.timeTo;
@@ -830,13 +837,11 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
           zoomTimer = setTimeout(function () { onZoomTimer(); }, zoomTimeout);
       }
 
-
       ///////////////////////////////
       //
       // INIT
       //
       ///////////////////////////////
-
 
       var svg = d3.select(this).append("svg:svg")
       .attr("width", totalWidth)
@@ -1028,14 +1033,6 @@ function cmd_chart(selection, chartPath, metaData, appSettings, stateManager, us
 
       var stateData = useUrlSearchParams ? getUrlSearchParams() : {} ;
       completeStateData(stateData);
-      loadDataAndRedraw(stateData);
-
-      //changeState(useUrlSearchParams ? getUrlSearchParams() : {} );
-     
-      // css for expor
-      //$.get('cmd_chart/cmd_chart.css', function(data) {
-      //  css_for_export = data.replace("\n",""); 
-      //  console.log("Css for export loaded successfully.");      
-      //});              
+      loadDataAndRedraw(stateData);             
   });
 }
