@@ -1,9 +1,9 @@
 { 
   "dateFormat" : "%Y-%m", 
   "dateMin"  : "1990-01" ,   
-  "dateMax"  : "2013-03" , 
-  "dateFrom" : "2003-03" ,
-  "dateTo"   : "2013-03" ,
+  "dateMax"  : "2013-06" , 
+  "dateFrom" : "1990-01" ,
+  "dateTo"   : "2013-06" ,
   "timeAxis" : {
     "tickCount": 8, 
     "subdivide" : 0,   
@@ -18,7 +18,7 @@
   },            
   "legend" : {
     "showBarChart" : true,         
-    "dateOfBarChart" : "2012-01" 
+    "dateOfBarChart" : "2013-06" 
   },         
   "tooltipText" : "simpleTooltip"
 }
