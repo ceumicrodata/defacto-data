@@ -3,7 +3,7 @@
 function updateMainMenu(initialMainId) {
   
   var MAINMENU_ITEM_WIDTH = 120; //pt;
-  var MAINMENU_ITEM_HEIGHT = 27; //pt;
+  var MAINMENU_ITEM_HEIGHT = 28; //pt;
   var MAINMENU_NUM_ITEMS_IN_ROW = 6; 
   var MAINMENU_NUM_ROWS = 2; 
    
@@ -89,13 +89,14 @@ function updateSubMenu(mainId, initialSubId) {
 function changeChart(chartPath) {
   var url = "?chartPath="+chartPath;
   var title = "CEU Microdata"; //TODO
-
   globalStateManager.changeState( { "chartPath" : chartPath }, title,  url );
 }
 
 //changing the chart
 var globalStateManager = new stateManager();
 globalStateManager.changeChartFunction = function(stateData) {
+
+  console.log (">>> globalStateManager.changeChartFunction : "+stateData.chartPath+": "+stateData.url+")");
 
   var mainKey = null;
   var subKey = null;
@@ -116,7 +117,7 @@ globalStateManager.changeChartFunction = function(stateData) {
     } 
   }
   
-  if (mainKey == null || subKey == null || !globalMetadata[mainKey] || !globalMetadata[mainKey].charts[subKey]) {
+  if (mainKey == null || subKey == null || !globalMetadata[mainKey] || !globalMetadata[mainKey].charts[subKey])  {
     alert ("Can't load chart ["+mainKey+"_"+subKey+"]");
     return;
   }

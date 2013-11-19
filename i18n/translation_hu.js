@@ -1,13 +1,13 @@
 var translations = {
-  "czechrepublic" : "Csehország",
-  "germany"	: "Németország",
-  "hungary"	: "Magyarország",
-  "austria"	:"Ausztria",
+  "CZ" : "Csehország",
+  "DE"	: "Németország",
+  "HU"	: "Magyarország",
+  "AU"	:"Ausztria",
   "PL" : "Lengyelország",
-  "slovakia" : "Szlovákia",
+  "SL" : "Szlovákia",
 
-  "eu15" : "Európai Unió (15)",
-  "v4" : "Visegrádi országok (4)"
+  "EU15" : "Európai Unió (15)",
+  "V3" : "Visegrádi országok (3)"
 }
 
 function _T(text) {

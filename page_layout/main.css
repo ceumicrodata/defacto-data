@@ -81,7 +81,7 @@ div {
   right: 50pt;
   top: 70pt;
   width: 400pt;
-  height: 200pt;
+  padding: 50px;
   background-color: #eeeeee;
   border: 1px solid #aaaaaa;
   text-align: center;   

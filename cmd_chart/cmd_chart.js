@@ -1,6 +1,7 @@
   
 function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDefaults, appSettings, stateManager, useUrlSearchParams ) {
 
+  console.log ("MAIN ENTRY POINT: ");
   function applyMetadataDefaults() {
     for (var key in metadataDefaults) {
       if (metaData[key] === undefined)
@@ -55,6 +56,8 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
 
   selection.select(".chartContainer").each(function () {
    
+      var forceFullRedraw = true; //force Full Redraw for the first time
+      
       applyMetadataDefaults();
       applyMetadataTemplates(metaData);
 
@@ -143,8 +146,11 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
               var sameKeyPaths = (stateManager.previousStateData != null) 
                     && (stateData.chartPath == stateManager.previousStateData.chartPath)
                     && (stateData.keyPath == stateManager.previousStateData.keyPath);
-              redraw(sameKeyPaths, stateData.isZoom);
-
+              
+              var instantRedraw = forceFullRedraw ? false : sameKeyPaths;
+              redraw(instantRedraw, stateData.isZoom);
+              forceFullRedraw = false;
+              
               zoomBehavior.zoomTo(scalesTime.domain());
               stateManager.previousStateData = stateData;
 
@@ -171,7 +177,12 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
               url = query.url;
               
               console.log("AJAX Query: " + url);
-              d3.json(url, function (data) {
+              d3.json(url, function (error,data) {
+
+                if (error)
+                  alert("Query failed: "+  query.url);
+                  if (error) return console.log("QUERY FAILED: " + error);
+                else {
 
                   //loading data
                   var currentKeyPath = currentPath.getPath();
@@ -228,11 +239,12 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
                                   .style("stroke", lastKey ? series[lastKey].color : appSettings.chartBackgroundColor);
                       }
                   }
-
-                  if (numOfQueriesToPerform > 1)
-                      numOfQueriesToPerform--;
-                  else
-                      updateGraph();
+                }
+                
+                if (numOfQueriesToPerform > 1)
+                    numOfQueriesToPerform--;
+                else
+                    updateGraph();
 
               });
           }
