@@ -3,7 +3,7 @@
 function updateMainMenu(initialMainId) {
   
   var MAINMENU_ITEM_WIDTH = 120; //pt;
-  var MAINMENU_ITEM_HEIGHT = 20; //pt;
+  var MAINMENU_ITEM_HEIGHT = 27; //pt;
   var MAINMENU_NUM_ITEMS_IN_ROW = 6; 
   var MAINMENU_NUM_ROWS = 2; 
    
@@ -37,7 +37,7 @@ function updateMainMenu(initialMainId) {
         changeChart(d3.select(this).attr("id").replace("chartPath_", ""));    
       });
 
-      if (x<MAINMENU_NUM_ITEMS_IN_ROW)
+      if (x<MAINMENU_NUM_ITEMS_IN_ROW-1)
         x++
       else {
         x=0; y++;
@@ -50,6 +50,7 @@ function updateMainMenu(initialMainId) {
       .classed("mainMenuItem", true)
       .classed("mainMenuItemInactive", true)
       .style ("left" , (pp*120) + "pt")
+      .style ("top"  , (y*MAINMENU_ITEM_HEIGHT) + "pt") 
       .text("  ");
       
 }

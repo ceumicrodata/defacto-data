@@ -29,16 +29,16 @@
       },
       "regions" : { 
           "isVisible" : "", 
-          "serieKey"  : "country",
+          "serieKey"  : "region", 
           "color"     : "colorTable0",
           "thickness" : 2, 
           "onClick"   : 1    
       },
       "v4" : { 
-          "isVisible" : "V3",
+          "isVisible" : "v4", 
           "serieKey"  : "country",    
           "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
-          "filter"    : "`region` = 'V3'",
+          "filter"    : "`region` = 'v4'",    
           "color"     : "colorTable1",
           "thickness" : 2,        
           "onClick"   : 0      

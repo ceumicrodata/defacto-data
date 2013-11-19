@@ -155,6 +155,7 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
 
           function queryAndDraw(query) {
 
+              /*
               var url = "server?table="+query.queryDetails.tableName
                             +"&dateKey="+query.queryDetails.dateKey
                             +"&serieKey="+query.queryDetails.serieKey
@@ -165,14 +166,17 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
                 url +="&filter=" + encodeURIComponent(query.queryDetails.filter);
               if (query.queryDetails.join)
                 url +="&join="+ encodeURIComponent(query.queryDetails.join);                     
-    
+              */
+              
+              url = query.url;
+              
               console.log("AJAX Query: " + url);
               d3.json(url, function (data) {
 
                   //loading data
                   var currentKeyPath = currentPath.getPath();
                   var serieCounter = 0;
-                  var table = data[query.queryDetails.tableName];
+                  var table = query.queryDetails.tableName === undefined ? data : data[query.queryDetails.tableName];
                   var processedSeries = new Object();
                   for (var i = 0; i < table.length; i++) {
                       var ID = table[i][query.queryDetails.serieKey];
@@ -192,9 +196,10 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
                           serieCounter ++;
                       }
 
-                      var date = d3.time.format(metaData.dateFormat).parse(table[i][query.queryDetails.dateKey]).getTime();
-                      var value = table[i][query.valueKey];
-                      var defined = table[i].defined;
+                      var date = d3.time.format(metaData.dateFormat).parse(table[i][query.queryDetails.dateKey === undefined ? "date" : query.queryDetails.dateKey]).getTime();
+                      //var value = table[i][query.valueKey];
+                      var value = query.valueKey === undefined ? +table[i].values : +table[i][query.valueKey];
+                      var defined = table[i].defined === undefined ? 1 : table[i].defined;
 
                       var foundExisting = false;
                       for (var d = 0; d < series[key].length; d++)
@@ -406,12 +411,14 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
               }
           }
 
-          for (si = 0; si < metaData.shadedIntervals.length; si++) {
-              var timeFrom = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateFrom);
-              var timeTo = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateTo);
-              svgShadedIntervals[si]
-                .attr("x", (scalesTime(timeFrom)) + "px")
-                .attr("width", (scalesTime(timeTo) - scalesTime(timeFrom)) + "px");
+          if (metaData.shadedIntervals) {
+            for (si = 0; si < metaData.shadedIntervals.length; si++) {
+                var timeFrom = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateFrom);
+                var timeTo = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateTo);
+                svgShadedIntervals[si]
+                  .attr("x", (scalesTime(timeFrom)) + "px")
+                  .attr("width", (scalesTime(timeTo) - scalesTime(timeFrom)) + "px");
+            }
           }
           
           
@@ -540,6 +547,7 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
           }
           
           if (tooltipInfo && !tooltipInfo.tooltipDate) {
+            if (metaData.shadedIntervals)
               for (si = 0; si < metaData.shadedIntervals.length; si++) {
                 var timeFrom = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateFrom);
                 var timeTo = d3.time.format(metaData.dateFormat).parse(metaData.shadedIntervals[si].dateTo);
@@ -917,14 +925,15 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
 
 
       var svgShadedIntervals = new Array();
-      for (si = 0; si < metaData.shadedIntervals.length; si++) {
-          svgShadedIntervals[si] = clippedArea.append("rect")
-          //.classed("shadedIntervals", true)
-          .style("fill", metaData.shadedIntervals[si].color)
-          .style("opacity", "0.3")
-          .attr("y", "0px")
-          .attr("height", height + "px");
-      }
+      if (metaData.shadedIntervals)
+        for (si = 0; si < metaData.shadedIntervals.length; si++) {
+            svgShadedIntervals[si] = clippedArea.append("rect")
+            //.classed("shadedIntervals", true)
+            .style("fill", metaData.shadedIntervals[si].color)
+            .style("opacity", "0.3")
+            .attr("y", "0px")
+            .attr("height", height + "px");
+        }
 
       var svgOverEndRectLeft = clippedArea.append("rect")
         .attr("fill", "#818181")
@@ -1025,6 +1034,19 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
       .on("mouseout", function () { 
           d3.select("#shareTumblrArea").style("display", "none");         
       });
+      
+      d3.select("#detailsButton")
+      .on("click", function () { 
+          d3.select("#detailsPanel").style("display", "block");
+          d3.select("#detailsButton").style("display", "none");
+      })
+      
+      d3.select("#detailsPanel")
+      .text(metaData.details)
+      .on("click", function () { 
+          d3.select("#detailsButton").style("display", "block");
+          d3.select("#detailsPanel").style("display", "none");
+      })
       ///////////////////////////
 
       stateManager.refreshChartFunction = loadDataAndRedraw;

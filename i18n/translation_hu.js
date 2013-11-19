@@ -3,7 +3,7 @@ var translations = {
   "germany"	: "Németország",
   "hungary"	: "Magyarország",
   "austria"	:"Ausztria",
-  "poland" : "Lengyelország",
+  "PL" : "Lengyelország",
   "slovakia" : "Szlovákia",
 
   "eu15" : "Európai Unió (15)",

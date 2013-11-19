@@ -55,11 +55,37 @@ div {
 .chartContainer {
   position: absolute;
   right: 40pt;
-  top: 60pt;
+  top: 100pt;
   left: 20pt;
   bottom: 20pt;
   background-color: #FFFFFF;  
   border-top: 1px solid #dddddd;
+}
+
+#detailsButton {
+  cursor:pointer;
+  position: absolute;
+  right: 50pt;
+  top: 70pt;
+  width: 15pt;
+  height: 15pt;
+  background-color: #eeeeee;
+  border: 1px solid #aaaaaa;
+  text-align: center;  
+}
+
+#detailsPanel {
+  cursor:pointer;
+  display: none;
+  position: absolute;
+  right: 50pt;
+  top: 70pt;
+  width: 400pt;
+  height: 200pt;
+  background-color: #eeeeee;
+  border: 1px solid #aaaaaa;
+  text-align: center;   
+
 }
 
 .chartShareButtons {
@@ -71,17 +97,17 @@ div {
 }
 .chartShareArea {
   z-index: 100;
-  border: 1px solid #eeeeee;
   position: absolute;
-  background-color: #FFFFFF;  
-  height: 30px;
+  background-color: #eeeeee;  
+  height: 24px;
   width: 200px;
-  right: 40pt;
+  padding: 3px;
+  right: 30pt;
   display: none;
 
 }
 
-#shareFacebookArea   {   top: 100pt; }
-#shareGooglePlusArea {   top: 125pt; }
-#shareTwitterArea    {   top: 150pt; }
-#shareTumblrArea     {   top: 175pt; }
+#shareFacebookArea   {   top: 0pt; }
+#shareGooglePlusArea {   top:  25pt; }
+#shareTwitterArea    {   top: 50pt; }
+#shareTumblrArea     {   top: 75pt; }
