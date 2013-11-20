@@ -211,7 +211,13 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
                       //var value = table[i][query.valueKey];
                       var value = query.valueKey === undefined ? +table[i].values : +table[i][query.valueKey];
                       var defined = table[i].defined === undefined ? 1 : table[i].defined;
-
+                      
+                      if (value > metaData.valueMax)
+                        metaData.valueMax = value;
+                      if (value < metaData.valueMin)
+                        metaData.valueMin = value;
+                        
+                      
                       var foundExisting = false;
                       for (var d = 0; d < series[key].length; d++)
                           if (series[key][d].date == date) {
