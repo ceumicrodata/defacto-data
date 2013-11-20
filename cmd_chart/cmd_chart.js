@@ -692,9 +692,7 @@ function cmd_chart(selection, chartPath, metaData, metadataTemplates, metadataDe
               svgTooltipDot.style("display", "none");
               svgTooltipGroup.style("display", "none");
           }
-          var BACKAVAILABLE_TODO = true;// (currentPath.getLevelIndex() > 0)
-          var clickablePosition = ( BACKAVAILABLE_TODO  && (nearestSerie === false)) 
-                               || (nearestSerie && (series[nearestSerie].onClick != 0) );
+          var clickablePosition = (nearestSerie ? (series[nearestSerie].onClick != 0) : currentKeyPath != "");
                                
           svg.style("cursor", clickablePosition ? "pointer" : "crosshair");
           
