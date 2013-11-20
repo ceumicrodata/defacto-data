@@ -72,7 +72,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Egy lakosra jutó éves bruttó hazai termék (GDP) vásárlóerő-paritáson. A GDP vásárlóerő-paritásra", 
-                    " történő átszámítása kiszűri az országok árszint-különbségeiből eredő eltéréseket."
+                    "történő átszámítása kiszűri az országok árszint-különbségeiből eredő eltéréseket."
                 ]
             }
         }, 
@@ -87,7 +87,7 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/EU15.json", 
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/EA17.json", 
                         "queryDetails": "regions"
                     }, 
                     {
@@ -114,7 +114,7 @@
                 "valueMax": 30, 
                 "description": [
                     "A fogyasztói árak éves változásának mértékét a harmonizált fogyasztóiár-index (HICP) előző év azonos", 
-                    " hónapjához képest vett százalékos változása alapján mérjük."
+                    "hónapjához képest vett százalékos változása alapján mérjük."
                 ]
             }
         }, 
@@ -129,7 +129,7 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/EU15.json", 
+                        "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/EA17.json", 
                         "queryDetails": "regions"
                     }, 
                     {
@@ -156,7 +156,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Az államháztartás elsődleges egyenlege a bruttó hazai termék (GDP) százalékában. Az elsődleges", 
-                    " egyenleg az államadósságon képződő kamatkiadások nélküli egyenleg."
+                    "egyenleg az államadósságon képződő kamatkiadások nélküli egyenleg."
                 ]
             }, 
             "governmentdebt": {
@@ -166,7 +166,7 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/EU15.json", 
+                        "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/EA17.json", 
                         "queryDetails": "regions"
                     }, 
                     {
@@ -230,7 +230,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Az államháztartás egyenlege a bruttó hazai termék (GDP) százalékában. Negatív érték költségvetési", 
-                    " hiányt, pozitív érték költségvetési többletet jelez."
+                    "hiányt, pozitív érték költségvetési többletet jelez."
                 ]
             }
         }, 
@@ -282,10 +282,6 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exportgrowth/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
                         "url": "http://db.microdata.io/db/defacto/defacto_exportgrowth/country/V3.json", 
                         "queryDetails": "regions"
                     }, 
@@ -309,7 +305,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Az áruexport előző év azonos havához képest vett százalékos változása, amit háromhavi mozgóátlaggal", 
-                    " simítottunk."
+                    "simítottunk."
                 ]
             }, 
             "competitiveness": {
@@ -318,10 +314,6 @@
                 "title": "competitiveness", 
                 "valueMin": 0, 
                 "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_competitiveness/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_competitiveness/country/V3.json", 
                         "queryDetails": "regions"
@@ -388,7 +380,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Az ipari termelés volumenének előző év azonos havához képest vett százalékos változása. A havi", 
-                    " frekvenciájú növekedési ütemeket háromhavi mozgóátlagolással simítottuk."
+                    "frekvenciájú növekedési ütemeket háromhavi mozgóátlagolással simítottuk."
                 ]
             }, 
             "investment": {
@@ -425,7 +417,7 @@
                 "valueMax": 30, 
                 "description": [
                     "A bruttó állóeszköz-felhalmozás és a bruttó hazai termék (GDP) hányadosa. A negyedéves frekvenciájú", 
-                    " adatot négy negyedéves mozgóátlagolással simítottuk."
+                    "adatot négy negyedéves mozgóátlagolással simítottuk."
                 ]
             }, 
             "gdpgrowth": {
@@ -462,7 +454,7 @@
                 "valueMax": 30, 
                 "description": [
                     "A bruttó hazai termék (GDP) volumenének az előző év azonos negyedévéhez képest vett százalékos", 
-                    " változása."
+                    "változása."
                 ]
             }
         }, 
@@ -476,10 +468,6 @@
                 "title": "tradebalance", 
                 "valueMin": 0, 
                 "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_tradebalance/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_tradebalance/country/V3.json", 
                         "queryDetails": "regions"
@@ -514,10 +502,6 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_externaldebt/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
                         "url": "http://db.microdata.io/db/defacto/defacto_externaldebt/country/V3.json", 
                         "queryDetails": "regions"
                     }, 
@@ -541,7 +525,7 @@
                 "valueMax": 30, 
                 "description": [
                     "A nemzetgazdaság nettó külföldi adóssága a bruttó hazai termék (GDP) százalékában. A nettó külföldi", 
-                    " adósság a külfölddel szembeni tartozások és követelések állományának különbsége."
+                    "adósság a külfölddel szembeni tartozások és követelések állományának különbsége."
                 ]
             }, 
             "currentaccount": {
@@ -551,7 +535,7 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/EU15.json", 
+                        "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/EA17.json", 
                         "queryDetails": "regions"
                     }, 
                     {
@@ -672,10 +656,6 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
                         "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/V3.json", 
                         "queryDetails": "regions"
                     }, 
@@ -699,7 +679,7 @@
                 "valueMax": 30, 
                 "description": [
                     "Nemzeti valuta nominális árfolyamának alakulása az euróval szemben (emelkedés = nemzeti valuta", 
-                    " nominális leértékelődése)."
+                    "nominális leértékelődése)."
                 ]
             }, 
             "longtermyield": {
@@ -709,7 +689,7 @@
                 "valueMin": 0, 
                 "queries": [
                     {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/EU15.json", 
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/EA.json", 
                         "queryDetails": "regions"
                     }, 
                     {
