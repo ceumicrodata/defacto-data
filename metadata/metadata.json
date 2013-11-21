@@ -1,126 +1,5 @@
 {
-    "Fejlődés": {
-        "charts": {
-            "gdp": {
-                "valueFormat": ".1f", 
-                "details": "Az euróban kifejezett folyóáras bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. Az adatot az Eurostat szezonalitástól és munkanap-hatástól megtisztította. A negyedéves frekvenciájú adatot 4-gyel szorozva évesítettük. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
-                "title": "gdp", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "Egy lakosra jutó éves bruttó hazai termék (GDP) euróban.", 
-                    ""
-                ]
-            }, 
-            "gdpppp": {
-                "valueFormat": ".1f", 
-                "details": "A vásárlóerő-paritásra átszámított éves bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. A vásárlóerő-paritásra történő átszámításkor az Eurostat nem csak közös valutára számítja át a GDP-ket, de az országok közötti árszint-különbségeket is kiszűri. Ez úgy történik, hogy a nemzeti valutában kifejezett folyóáras GDP-t egy fiktív pénznemre (PPS, Purchasing Parity Standards) váltja át. Az átváltási árfolyam egy reprezentatív fogyasztói kosár adott országbeli árának és az EU27 átlagára vonatkozó euróban kifejezett árnak a hányadosa. A vásárlóerő-paritáson kifejezett GDP tehát azt fejezi ki, hogy adott országban a bruttó hazai termékből a reprezentatív fogyasztó kosárnak hány az EU27 átlagában 1 eurót érő egységét lehet megvásárolni. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
-                "title": "gdpppp", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "Egy lakosra jutó éves bruttó hazai termék (GDP) vásárlóerő-paritáson. A GDP vásárlóerő-paritásra", 
-                    "történő átszámítása kiszűri az országok árszint-különbségeiből eredő eltéréseket."
-                ]
-            }
-        }, 
-        "title": "Fejlődés"
-    }, 
-    "Infláció": {
-        "charts": {
-            "inflation": {
-                "valueFormat": ".1f", 
-                "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
-                "title": "inflation", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/EA17.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "A fogyasztói árak éves változásának mértékét a harmonizált fogyasztóiár-index (HICP) előző év azonos", 
-                    "hónapjához képest vett százalékos változása alapján mérjük."
-                ]
-            }
-        }, 
-        "title": "Infláció"
-    }, 
-    "Államháztartás": {
+    "Allamhaztartas": {
         "charts": {
             "primarybudget": {
                 "valueFormat": ".1f", 
@@ -130,7 +9,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/EA17.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/V3.json", 
@@ -167,7 +46,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/EA17.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/V3.json", 
@@ -204,7 +83,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_budget/country/EU15.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_budget/country/V3.json", 
@@ -236,7 +115,153 @@
         }, 
         "title": "Államháztartás"
     }, 
-    "Versenyképesség": {
+    "Penzugyipiacok": {
+        "charts": {
+            "exchangerate": {
+                "valueFormat": ".1f", 
+                "details": "A nominális árfolyam egy euro nemzeti valutában kifejezett értéke. A havi átlagos árfolyamok idősorait 2005. január átlaga = 100 formájú indexre számítottuk át. Szlovákiát euroövezeti tagsága miatt nem szerepeltetjük.", 
+                "title": "exchangerate", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/HUF.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/CZK.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/PLN.json", 
+                        "queryDetails": "regions_nc1"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "Nemzeti valuta nominális árfolyamának alakulása az euróval szemben (emelkedés = nemzeti valuta", 
+                    "nominális leértékelődése)."
+                ]
+            }, 
+            "longtermyield": {
+                "valueFormat": ".1f", 
+                "details": "Tízéves lejáratú, nemzeti valutában denominált államkötvények másodpiaci, adózás előtti éves hozamainak havi frekvenciájú idősora. Az Euroövezetre vonatkozó idősor előállításánál az Eurostat az egyes tagországok tízéves lejáratú államkötvény-állományainak nominális értékével súlyoz. A Visegrád-3 átlag számításánál az euróban mért folyóáras GDP két negyedévvel korábbról visszatekintő négy negyedéves összegével súlyoztunk.", 
+                "title": "longtermyield", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/EA.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "Nemzeti valutában denominált hosszú lejáratú államkötvények éves hozama.", 
+                    ""
+                ]
+            }
+        }, 
+        "title": "Pénzügyi piacok"
+    }, 
+    "Fejlodes": {
+        "charts": {
+            "gdp": {
+                "valueFormat": ".1f", 
+                "details": "Az euróban kifejezett folyóáras bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. Az adatot az Eurostat szezonalitástól és munkanap-hatástól megtisztította. A negyedéves frekvenciájú adatot 4-gyel szorozva évesítettük. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
+                "title": "gdp", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/EU15.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "Egy lakosra jutó éves bruttó hazai termék (GDP) euróban.", 
+                    ""
+                ]
+            }, 
+            "gdpppp": {
+                "valueFormat": ".1f", 
+                "details": "A vásárlóerő-paritásra átszámított éves bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. A vásárlóerő-paritásra történő átszámításkor az Eurostat nem csak közös valutára számítja át a GDP-ket, de az országok közötti árszint-különbségeket is kiszűri. Ez úgy történik, hogy a nemzeti valutában kifejezett folyóáras GDP-t egy fiktív pénznemre (PPS, Purchasing Parity Standards) váltja át. Az átváltási árfolyam egy reprezentatív fogyasztói kosár adott országbeli árának és az EU27 átlagára vonatkozó euróban kifejezett árnak a hányadosa. A vásárlóerő-paritáson kifejezett GDP tehát azt fejezi ki, hogy adott országban a bruttó hazai termékből a reprezentatív fogyasztó kosárnak hány az EU27 átlagában 1 eurót érő egységét lehet megvásárolni. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
+                "title": "gdpppp", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/EU15.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "Egy lakosra jutó éves bruttó hazai termék (GDP) vásárlóerő-paritáson. A GDP vásárlóerő-paritásra", 
+                    "történő átszámítása kiszűri az országok árszint-különbségeiből eredő eltéréseket."
+                ]
+            }
+        }, 
+        "title": "Fejlődés"
+    }, 
+    "Versenykepesseg": {
         "charts": {
             "laborproductivity": {
                 "valueFormat": ".1f", 
@@ -246,7 +271,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborproductivity/country/EU15.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborproductivity/country/V3.json", 
@@ -344,7 +369,7 @@
         }, 
         "title": "Versenyképesség"
     }, 
-    "Növekedés": {
+    "Noevekedes": {
         "charts": {
             "industrygrowth": {
                 "valueFormat": ".1f", 
@@ -354,7 +379,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_industrygrowth/country/EU15.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_industrygrowth/country/V3.json", 
@@ -391,7 +416,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_investment/country/EU15.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_investment/country/V3.json", 
@@ -428,7 +453,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpgrowth/country/EU15.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpgrowth/country/V3.json", 
@@ -460,7 +485,128 @@
         }, 
         "title": "Növekedés"
     }, 
-    "Külső egyensúly": {
+    "Inflacio": {
+        "charts": {
+            "inflation": {
+                "valueFormat": ".1f", 
+                "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
+                "title": "inflation", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/EA17.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "A fogyasztói árak éves változásának mértékét a harmonizált fogyasztóiár-index (HICP) előző év azonos", 
+                    "hónapjához képest vett százalékos változása alapján mérjük."
+                ]
+            }
+        }, 
+        "title": "Infláció"
+    }, 
+    "Munkapiac": {
+        "charts": {
+            "laborforce": {
+                "valueFormat": ".1f", 
+                "details": "Az aktivitás és népesség adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonális igazítás nélkül. A Visegrád-3 átlagot a 15-74 éves népesség számával súlyoztuk.", 
+                "title": "laborforce", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/EU15.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "A gazdaságilag aktívak és a népesség számának hányadosa a 15-74 éves korosztályban.", 
+                    ""
+                ]
+            }, 
+            "unemployment": {
+                "valueFormat": ".1f", 
+                "details": "A munkanélküliség és aktivitás adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az LFS definíciója szerint munkanélküli az a 15-74 év közötti személy, akinek a felmérés hetében nem volt munkája, azonnal munkába tudott volna állni és a megelőző négy hétben aktívan keresett munkát. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonálisan igazítva. A Visegrád-3 átlagot az aktív népességgel súlyoztuk.", 
+                "title": "unemployment", 
+                "valueMin": 0, 
+                "queries": [
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/EU15.json", 
+                        "queryDetails": "regions_nc"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/V3.json", 
+                        "queryDetails": "regions"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/HU.json", 
+                        "queryDetails": "referenceCountry"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/SK.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/CZ.json", 
+                        "queryDetails": "v4"
+                    }, 
+                    {
+                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/PL.json", 
+                        "queryDetails": "v4"
+                    }
+                ], 
+                "valueMax": 30, 
+                "description": [
+                    "A munkanélküliek és a gazdaságilag aktívak számának hányadosa.", 
+                    ""
+                ]
+            }
+        }, 
+        "title": "Munkapiac"
+    }, 
+    "Kulsoegyensuly": {
         "charts": {
             "tradebalance": {
                 "valueFormat": ".1f", 
@@ -536,7 +682,7 @@
                 "queries": [
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/EA17.json", 
-                        "queryDetails": "regions"
+                        "queryDetails": "regions_nc"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/V3.json", 
@@ -567,159 +713,5 @@
             }
         }, 
         "title": "Külső egyensúly"
-    }, 
-    "Munkapiac": {
-        "charts": {
-            "laborforce": {
-                "valueFormat": ".1f", 
-                "details": "Az aktivitás és népesség adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonális igazítás nélkül. A Visegrád-3 átlagot a 15-74 éves népesség számával súlyoztuk.", 
-                "title": "laborforce", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "A gazdaságilag aktívak és a népesség számának hányadosa a 15-74 éves korosztályban.", 
-                    ""
-                ]
-            }, 
-            "unemployment": {
-                "valueFormat": ".1f", 
-                "details": "A munkanélküliség és aktivitás adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az LFS definíciója szerint munkanélküli az a 15-74 év közötti személy, akinek a felmérés hetében nem volt munkája, azonnal munkába tudott volna állni és a megelőző négy hétben aktívan keresett munkát. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonálisan igazítva. A Visegrád-3 átlagot az aktív népességgel súlyoztuk.", 
-                "title": "unemployment", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/EU15.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "A munkanélküliek és a gazdaságilag aktívak számának hányadosa.", 
-                    ""
-                ]
-            }
-        }, 
-        "title": "Munkapiac"
-    }, 
-    "Pénzügyi piacok": {
-        "charts": {
-            "exchangerate": {
-                "valueFormat": ".1f", 
-                "details": "A nominális árfolyam egy euro nemzeti valutában kifejezett értéke. A havi átlagos árfolyamok idősorait 2005. január átlaga = 100 formájú indexre számítottuk át. Szlovákiát euroövezeti tagsága miatt nem szerepeltetjük.", 
-                "title": "exchangerate", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_exchangerate/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "Nemzeti valuta nominális árfolyamának alakulása az euróval szemben (emelkedés = nemzeti valuta", 
-                    "nominális leértékelődése)."
-                ]
-            }, 
-            "longtermyield": {
-                "valueFormat": ".1f", 
-                "details": "Tízéves lejáratú, nemzeti valutában denominált államkötvények másodpiaci, adózás előtti éves hozamainak havi frekvenciájú idősora. Az Euroövezetre vonatkozó idősor előállításánál az Eurostat az egyes tagországok tízéves lejáratú államkötvény-állományainak nominális értékével súlyoz. A Visegrád-3 átlag számításánál az euróban mért folyóáras GDP két negyedévvel korábbról visszatekintő négy negyedéves összegével súlyoztunk.", 
-                "title": "longtermyield", 
-                "valueMin": 0, 
-                "queries": [
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/EA.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/V3.json", 
-                        "queryDetails": "regions"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/HU.json", 
-                        "queryDetails": "referenceCountry"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/SK.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/CZ.json", 
-                        "queryDetails": "v4"
-                    }, 
-                    {
-                        "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/PL.json", 
-                        "queryDetails": "v4"
-                    }
-                ], 
-                "valueMax": 30, 
-                "description": [
-                    "Nemzeti valutában denominált hosszú lejáratú államkötvények éves hozama.", 
-                    ""
-                ]
-            }
-        }, 
-        "title": "Pénzügyi piacok"
     }
 }
