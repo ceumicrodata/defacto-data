@@ -48,7 +48,16 @@
           "thickness" : 2, 
           "onClick"   : 0    
       },
-      "v4" : { 
+      "v4_1" : { 
+          "isVisible" : "V3",
+          "serieKey"  : "country",    
+          "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+          "filter"    : "`region` = 'V3'",
+          "color"     : "#002266",
+          "thickness" : 2,        
+          "onClick"   : 0      
+      },
+      "v4_2" : { 
           "isVisible" : "V3",
           "serieKey"  : "country",    
           "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
@@ -56,13 +65,22 @@
           "color"     : "colorTable1",
           "thickness" : 2,        
           "onClick"   : 0      
-      }, 
+      },
+      "v4_3" : { 
+          "isVisible" : "V3",
+          "serieKey"  : "country",    
+          "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
+          "filter"    : "`region` = 'V3'",
+          "color"     : "#0066cc",
+          "thickness" : 2,        
+          "onClick"   : 0      
+      },
       "eu15" : { 
           "isVisible" : "eu15", 
           "serieKey"  : "country", 
           "join"      : "`countriesInRegions` ON `countriesInRegions`.`country` = `countries`.`country`", 
           "filter"    : "`region` = 'eu15'",    
-          "color"     : "colorTable2",
+          "color"     : "#0099ff",
           "thickness" : 2,        
           "onClick"   : 0           
       } 

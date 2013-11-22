@@ -21,15 +21,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdp/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -58,15 +58,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpppp/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -100,15 +100,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_industrygrowth/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_industrygrowth/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_industrygrowth/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -137,15 +137,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_investment/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_investment/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_investment/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -174,15 +174,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpgrowth/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpgrowth/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_gdpgrowth/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -216,15 +216,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_inflation/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -258,15 +258,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborforce/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -295,15 +295,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_unemployment/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -333,15 +333,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_tradebalance/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_tradebalance/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_tradebalance/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -366,15 +366,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_externaldebt/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_externaldebt/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_externaldebt/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -403,15 +403,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_currentaccount/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -445,15 +445,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_primarybudget/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -482,15 +482,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_governmentdebt/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -519,15 +519,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_budget/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_budget/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_budget/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -586,15 +586,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_longtermyield/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -628,15 +628,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborproductivity/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborproductivity/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_laborproductivity/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -661,15 +661,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_exportgrowth/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_exportgrowth/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_exportgrowth/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
@@ -694,15 +694,15 @@
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_competitiveness/country/SK.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_1"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_competitiveness/country/CZ.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://db.microdata.io/db/defacto/defacto_competitiveness/country/PL.json", 
-                        "queryDetails": "v4"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueMax": 30, 
