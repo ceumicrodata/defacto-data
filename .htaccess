@@ -1,0 +1,7 @@
+AuthUserFile /home/kovacs/.htpasswd
+AuthType Basic
+AuthName "Defacto update"
+
+<Files "update.php">
+  Require valid-user
+</Files>
