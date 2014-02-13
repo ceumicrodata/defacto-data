@@ -355,11 +355,6 @@
                 ], 
                 "title": "Államadósság", 
                 "valueMin": 0, 
-                  "timeAxis" : {
-                    "tickCount": 8, 
-                    "subdivide" : 0,   
-                    "tickFormat": "dateAxisAnnual"
-                  }, 
                 "dateTo": "2013-06-30", 
                 "dateFrom": "2000-03-31", 
                 "dateMin": "2000-03-31", 
@@ -791,11 +786,11 @@
                     }, 
                     {
                         "url": "http://defacto.ceu.hu/data/upload/exchangerate/CZK.json", 
-                        "queryDetails": "regions_nc"
+                        "queryDetails": "v4_2"
                     }, 
                     {
                         "url": "http://defacto.ceu.hu/data/upload/exchangerate/PLN.json", 
-                        "queryDetails": "regions_nc1"
+                        "queryDetails": "v4_3"
                     }
                 ], 
                 "valueFormat": ".1f", 
