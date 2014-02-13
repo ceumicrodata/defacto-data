@@ -14,27 +14,27 @@
                 "details": "Az euróban kifejezett folyóáras bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. Az adatot az Eurostat szezonalitástól és munkanap-hatástól megtisztította. A negyedéves frekvenciájú adatot 4-gyel szorozva évesítettük. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/EU15.json", 
+                        "url": "data/upload/gdp/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/V3.json", 
+                        "url": "data/upload/gdp/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/HU.json", 
+                        "url": "data/upload/gdp/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/SK.json", 
+                        "url": "data/upload/gdp/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/CZ.json", 
+                        "url": "data/upload/gdp/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdp/PL.json", 
+                        "url": "data/upload/gdp/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -56,27 +56,27 @@
                 "details": "A vásárlóerő-paritásra átszámított éves bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. A vásárlóerő-paritásra történő átszámításkor az Eurostat nem csak közös valutára számítja át a GDP-ket, de az országok közötti árszint-különbségeket is kiszűri. Ez úgy történik, hogy a nemzeti valutában kifejezett folyóáras GDP-t egy fiktív pénznemre (PPS, Purchasing Parity Standards) váltja át. Az átváltási árfolyam egy reprezentatív fogyasztói kosár adott országbeli árának és az EU27 átlagára vonatkozó euróban kifejezett árnak a hányadosa. A vásárlóerő-paritáson kifejezett GDP tehát azt fejezi ki, hogy adott országban a bruttó hazai termékből a reprezentatív fogyasztó kosárnak hány az EU27 átlagában 1 eurót érő egységét lehet megvásárolni. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/EU15.json", 
+                        "url": "data/upload/gdpppp/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/V3.json", 
+                        "url": "data/upload/gdpppp/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/HU.json", 
+                        "url": "data/upload/gdpppp/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/SK.json", 
+                        "url": "data/upload/gdpppp/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/CZ.json", 
+                        "url": "data/upload/gdpppp/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpppp/PL.json", 
+                        "url": "data/upload/gdpppp/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -102,27 +102,27 @@
                 "details": "A bruttó hazai termék (GDP) volumenének éves változása a gazdasági növekedés mérőszáma. A számításnál változatlan (2005. évi) áras, szezonálisan nem igazított GDP adatokat használtunk. A Visegrád-3 átlagot a százalékos növekedés bázisidőszakának változatlan áras, euróban mért GDP-jével súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/EU15.json", 
+                        "url": "data/upload/gdpgrowth/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/V3.json", 
+                        "url": "data/upload/gdpgrowth/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/HU.json", 
+                        "url": "data/upload/gdpgrowth/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/SK.json", 
+                        "url": "data/upload/gdpgrowth/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/CZ.json", 
+                        "url": "data/upload/gdpgrowth/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/gdpgrowth/PL.json", 
+                        "url": "data/upload/gdpgrowth/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -143,27 +143,27 @@
                 "details": "Az ipari termelés növekedési ütemének számításához az ipari termelés 2000. év átlaga = 100 formájú volumenindexet használtuk, melyet az Eurostat megtisztított a munkanap-hatásoktól. A statisztika a teljes feldolgozóiparon túl a bányászat, kőfejtés és a villamosenergia-, gáz-, gőzellátás, légkondicionálás alágakat is tartalmazza. A havi frekvenciájú százalékos növekedési ütemeket háromhavi visszatekintő mozgóátlagolással simítottuk. A Visegrád-3 átlagot a százalékos változás bázisidőszakának változatlan áras ipari termelésével súlyoztuk. A változatlan (2010. évi) áras ipari termelést a 2010. évi folyóáras euróban mért ipari termelés és a volumenindex idősorok segítségével állítottuk elő.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/EU15.json", 
+                        "url": "data/upload/industrygrowth/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/V3.json", 
+                        "url": "data/upload/industrygrowth/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/HU.json", 
+                        "url": "data/upload/industrygrowth/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/SK.json", 
+                        "url": "data/upload/industrygrowth/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/CZ.json", 
+                        "url": "data/upload/industrygrowth/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/industrygrowth/PL.json", 
+                        "url": "data/upload/industrygrowth/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -184,27 +184,27 @@
                 "details": "A beruházási ráta a beruházási tevékenység GDP-arányos mérőszáma. A számításnál a változatlan (2005. évi) áras és szezonálisan nem igazított bruttó állóeszköz-felhalmozás és GDP adatokat használtuk. A Visegrád-3 átlagot a változatlan áras, euróban mért GDP-vel súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/EU15.json", 
+                        "url": "data/upload/investment/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/V3.json", 
+                        "url": "data/upload/investment/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/HU.json", 
+                        "url": "data/upload/investment/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/SK.json", 
+                        "url": "data/upload/investment/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/CZ.json", 
+                        "url": "data/upload/investment/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/investment/PL.json", 
+                        "url": "data/upload/investment/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -229,27 +229,27 @@
                 "details": "A munkanélküliség és aktivitás adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az LFS definíciója szerint munkanélküli az a 15-74 év közötti személy, akinek a felmérés hetében nem volt munkája, azonnal munkába tudott volna állni és a megelőző négy hétben aktívan keresett munkát. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonálisan igazítva. A Visegrád-3 átlagot az aktív népességgel súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/EU15.json", 
+                        "url": "data/upload/unemployment/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/V3.json", 
+                        "url": "data/upload/unemployment/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/HU.json", 
+                        "url": "data/upload/unemployment/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/SK.json", 
+                        "url": "data/upload/unemployment/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/CZ.json", 
+                        "url": "data/upload/unemployment/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/unemployment/PL.json", 
+                        "url": "data/upload/unemployment/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -270,27 +270,27 @@
                 "details": "Az aktivitás és népesség adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonális igazítás nélkül. A Visegrád-3 átlagot a 15-74 éves népesség számával súlyoztuk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/EU15.json", 
+                        "url": "data/upload/laborforce/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/V3.json", 
+                        "url": "data/upload/laborforce/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/HU.json", 
+                        "url": "data/upload/laborforce/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/SK.json", 
+                        "url": "data/upload/laborforce/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/CZ.json", 
+                        "url": "data/upload/laborforce/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborforce/PL.json", 
+                        "url": "data/upload/laborforce/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -316,27 +316,27 @@
                 "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/EU15.json", 
+                        "url": "data/upload/inflation/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/V3.json", 
+                        "url": "data/upload/inflation/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/HU.json", 
+                        "url": "data/upload/inflation/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/SK.json", 
+                        "url": "data/upload/inflation/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/CZ.json", 
+                        "url": "data/upload/inflation/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/inflation/PL.json", 
+                        "url": "data/upload/inflation/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -361,27 +361,27 @@
                 "details": "Az államháztartási szektor teljes konszolidált bruttó adósságállományának negyedév végi nominális értékét a folyóáras GDP visszatekintő négy negyedéves összegével osztottuk. A bruttó államadósság számbavétele az ESA 95 (European system of accounts, 1995 edition) módszertan alapján történt. Az Euroövezet adósságmutatója nem tartalmazza a tagországok egymásnak nyújtott hiteleit. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/EU15.json", 
+                        "url": "data/upload/governmentdebt/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/V3.json", 
+                        "url": "data/upload/governmentdebt/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/HU.json", 
+                        "url": "data/upload/governmentdebt/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/SK.json", 
+                        "url": "data/upload/governmentdebt/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/CZ.json", 
+                        "url": "data/upload/governmentdebt/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/governmentdebt/PL.json", 
+                        "url": "data/upload/governmentdebt/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -402,27 +402,27 @@
                 "details": "Az államháztartási egyenleg az államháztartási szektor bevételeinek és kiadásainak különbsége az ESA 95 (European system of accounts, 1995 edition) módszertan alapján számítva. Az éves egyenleget az éves folyóáras GDP-vel osztottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/EU15.json", 
+                        "url": "data/upload/budgetannual/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/V3.json", 
+                        "url": "data/upload/budgetannual/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/HU.json", 
+                        "url": "data/upload/budgetannual/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/SK.json", 
+                        "url": "data/upload/budgetannual/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/CZ.json", 
+                        "url": "data/upload/budgetannual/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetannual/PL.json", 
+                        "url": "data/upload/budgetannual/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -443,27 +443,27 @@
                 "details": "Az államháztartási egyenleg az államháztartási szektor bevételeinek és kiadásainak különbsége az ESA 95 (European system of accounts, 1995 edition) módszertan alapján számítva. A negyedéves frekvenciájú adatot az államháztartási egyenleg és a folyóáras GDP visszatekintő négy negyedéves összegeinek hányadosaként számítottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/EU15.json", 
+                        "url": "data/upload/budgetquaterly/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/V3.json", 
+                        "url": "data/upload/budgetquaterly/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/HU.json", 
+                        "url": "data/upload/budgetquaterly/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/SK.json", 
+                        "url": "data/upload/budgetquaterly/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/CZ.json", 
+                        "url": "data/upload/budgetquaterly/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/budgetquaterly/PL.json", 
+                        "url": "data/upload/budgetquaterly/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -484,27 +484,27 @@
                 "details": "Az államháztartás elsődleges egyenlege az államháztartási szektor bevételeinek és kiadásainak különbsége az államadósságon képződő kamatkiadások figyelembevétele nélkül az ESA 95 (European system of accounts, 1995 edition) módszertan alapján számítva. Az éves egyenleget az éves folyóáras GDP-vel osztottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/EU15.json", 
+                        "url": "data/upload/primarybudget/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/V3.json", 
+                        "url": "data/upload/primarybudget/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/HU.json", 
+                        "url": "data/upload/primarybudget/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/SK.json", 
+                        "url": "data/upload/primarybudget/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/CZ.json", 
+                        "url": "data/upload/primarybudget/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/primarybudget/PL.json", 
+                        "url": "data/upload/primarybudget/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -530,27 +530,27 @@
                 "details": "Az áruk és szolgáltatások negyedéves kivitelének és behozatalának különbsége a negyedéves GDP értékével osztva. Az egyenleg és a GDP is folyóráras és szezonalitástól és munkanap-hatástól megtisztított. A Visegrád-3 átlag számításánál euróban mért, folyóáras, szezonalitástól és munkanap-hatástól megtisztított GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/EU15.json", 
+                        "url": "data/upload/tradebalance/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/V3.json", 
+                        "url": "data/upload/tradebalance/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/HU.json", 
+                        "url": "data/upload/tradebalance/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/SK.json", 
+                        "url": "data/upload/tradebalance/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/CZ.json", 
+                        "url": "data/upload/tradebalance/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/tradebalance/PL.json", 
+                        "url": "data/upload/tradebalance/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -570,27 +570,27 @@
                 "details": "Az euróban mért folyó fizetési mérleg egyenleg és az euróban mért folyóáras GDP négy negyedéves gördülő összegeinek hányadosa. Az Euroövezet folyó fizetési mérlege az Euroövezeten kívüli országok összességével szemben értendő. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/EU15.json", 
+                        "url": "data/upload/currentaccount/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/V3.json", 
+                        "url": "data/upload/currentaccount/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/HU.json", 
+                        "url": "data/upload/currentaccount/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/SK.json", 
+                        "url": "data/upload/currentaccount/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/CZ.json", 
+                        "url": "data/upload/currentaccount/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/currentaccount/PL.json", 
+                        "url": "data/upload/currentaccount/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -612,27 +612,27 @@
                 "details": "A nettó külföldi adósságállomány adott negyedév végi euróértékét az euróban mért folyóáras GDP visszatekintő négy negyedéves összegével osztottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/EU15.json", 
+                        "url": "data/upload/externaldebt/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/V3.json", 
+                        "url": "data/upload/externaldebt/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/HU.json", 
+                        "url": "data/upload/externaldebt/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/SK.json", 
+                        "url": "data/upload/externaldebt/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/CZ.json", 
+                        "url": "data/upload/externaldebt/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/externaldebt/PL.json", 
+                        "url": "data/upload/externaldebt/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -658,23 +658,23 @@
                 "details": "A relatív munkaerő-költséget a munkaegység-költség (ULC, unit labor cost) alapú reálárfolyammal mérjük. Ez két gazdasági térség termékegységre jutó munkaerőköltség-szintjét hasonlítja össze azonos valutára átszámítva. Effektív reálárfolyam esetén adott országot főbb külkereskedelmi partnereinek külkereskedelmi forgalommal súlyozott átlagához hasonlítjuk. Jelen esetben ez az EU27 országok súlyozott átlaga. A mutató értékének emelkedése adott ország munkaköltség-alapú versenyképességének javulását mutatja az EU-beli külkereskedelmi partnerek átlagához képest.  A mutatót az Eurostat a teljes nemzetgazdasági munkaegység-költség alapján számítja és 2005. év átlaga = 100 indexformában teszi közzé. A Visegrád-3 átlag számításánál az adott ország exportjának a Visegrád-3 EU27-be irányuló exportján belüli arányával súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/competitiveness/V3.json", 
+                        "url": "data/upload/competitiveness/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/competitiveness/HU.json", 
+                        "url": "data/upload/competitiveness/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/competitiveness/SK.json", 
+                        "url": "data/upload/competitiveness/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/competitiveness/CZ.json", 
+                        "url": "data/upload/competitiveness/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/competitiveness/PL.json", 
+                        "url": "data/upload/competitiveness/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -694,27 +694,27 @@
                 "details": "A munka-termelékenységi mutatót az Eurostat a változatlan áras GDP és a ledolgozott munkaórák hányadosaként számítja, szezonalitástól és munkanap-hatástól megtisztítja és 2005. év átlaga = 100 formájú indexként teszi közzé. A Visegrád átlag számításánál a változatlan (2005. évi) áras, euróban mért GDP-vel súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/EU15.json", 
+                        "url": "data/upload/laborproductivity/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/V3.json", 
+                        "url": "data/upload/laborproductivity/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/HU.json", 
+                        "url": "data/upload/laborproductivity/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/SK.json", 
+                        "url": "data/upload/laborproductivity/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/CZ.json", 
+                        "url": "data/upload/laborproductivity/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/laborproductivity/PL.json", 
+                        "url": "data/upload/laborproductivity/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -735,27 +735,27 @@
                 "details": "A teljes áruexport-forgalom euróban kifejezett értékének a megelőző év azonos havához képest vett százalékos változása. A havi frekvenciájú növekedési ütemeket háromhavi visszatekintő mozgóátlagolással simítottuk. A Visegrád átlag számításánál a százalékos változás bázisidőszakának euróban kifejezett exportértékével súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/EU15.json", 
+                        "url": "data/upload/exportgrowth/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/V3.json", 
+                        "url": "data/upload/exportgrowth/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/HU.json", 
+                        "url": "data/upload/exportgrowth/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/SK.json", 
+                        "url": "data/upload/exportgrowth/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/CZ.json", 
+                        "url": "data/upload/exportgrowth/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exportgrowth/PL.json", 
+                        "url": "data/upload/exportgrowth/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
@@ -781,16 +781,16 @@
                 "details": "A nominális árfolyam egy euro nemzeti valutában kifejezett értéke. A havi átlagos árfolyamok idősorait 2005. január átlaga = 100 formájú indexre számítottuk át. Szlovákiát euroövezeti tagsága miatt nem szerepeltetjük.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exchangerate/HUF.json", 
+                        "url": "data/upload/exchangerate/HUF.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exchangerate/CZK.json", 
-                        "queryDetails": "v4_2"
+                        "url": "data/upload/exchangerate/CZK.json", 
+                        "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/exchangerate/PLN.json", 
-                        "queryDetails": "v4_3"
+                        "url": "data/upload/exchangerate/PLN.json", 
+                        "queryDetails": "regions_nc1"
                     }
                 ], 
                 "valueFormat": ".1f", 
@@ -809,27 +809,27 @@
                 "details": "Tízéves lejáratú, nemzeti valutában denominált államkötvények másodpiaci, adózás előtti éves hozamainak havi frekvenciájú idősora. Az Euroövezetre vonatkozó idősor előállításánál az Eurostat az egyes tagországok tízéves lejáratú államkötvény-állományainak nominális értékével súlyoz. A Visegrád-3 átlag számításánál az euróban mért folyóáras GDP két negyedévvel korábbról visszatekintő négy negyedéves összegével súlyoztunk.", 
                 "queries": [
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/EU15.json", 
+                        "url": "data/upload/longtermyield/EU15.json", 
                         "queryDetails": "regions_nc"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/V3.json", 
+                        "url": "data/upload/longtermyield/V3.json", 
                         "queryDetails": "regions"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/HU.json", 
+                        "url": "data/upload/longtermyield/HU.json", 
                         "queryDetails": "referenceCountry"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/SK.json", 
+                        "url": "data/upload/longtermyield/SK.json", 
                         "queryDetails": "v4_1"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/CZ.json", 
+                        "url": "data/upload/longtermyield/CZ.json", 
                         "queryDetails": "v4_2"
                     }, 
                     {
-                        "url": "http://defacto.ceu.hu/data/upload/longtermyield/PL.json", 
+                        "url": "data/upload/longtermyield/PL.json", 
                         "queryDetails": "v4_3"
                     }
                 ], 
