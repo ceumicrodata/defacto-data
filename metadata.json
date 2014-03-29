@@ -564,6 +564,10 @@
                 ], 
                 "title": "Folyó fizetési mérleg", 
                 "valueMin": 0, 
+                "legend" : {
+                    "showBarChart" : true,         
+                    "dateOfBarChart" : "2013-09-30" 
+                },
                 "dateTo": "2013-09-30", 
                 "dateFrom": "1995-12-31", 
                 "dateMin": "1995-12-31", 
