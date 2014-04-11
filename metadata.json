@@ -303,14 +303,18 @@
     "Inflacio": {
         "charts": {
             "inflation": {
-                "dateMax": "2014-02-28", 
+                "legend" : {
+                    "showBarChart" : true,         
+                    "dateOfBarChart" : "2014-03-31" 
+                },
+                "dateMax": "2014-03-31", 
                 "description": [
                     "A fogyasztói kosár árának százalékos változása az előző év azonos hónapjához", 
                     "képest."
                 ], 
                 "title": "Infláció", 
                 "valueMin": 0, 
-                "dateTo": "2014-02-28", 
+                "dateTo": "2014-03-31", 
                 "dateFrom": "1997-01-31", 
                 "dateMin": "1997-01-31", 
                 "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
