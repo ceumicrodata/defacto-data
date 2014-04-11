@@ -305,7 +305,7 @@
             "inflation": {
                 "legend" : {
                     "showBarChart" : true,         
-                    "dateOfBarChart" : "2014-03-31" 
+                    "dateOfBarChart" : "2014-02-28" 
                 },
                 "dateMax": "2014-03-31", 
                 "description": [
