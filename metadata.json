@@ -89,14 +89,14 @@
     "Noevekedes": {
         "charts": {
             "gdpgrowth": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-03-31", 
                 "description": [
                     "A bruttó hazai termék (GDP) volumenének százalékos változása az előző év azonos", 
                     "negyedévéhez képest."
                 ], 
                 "title": "GDP növekedése", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-03-31", 
                 "dateFrom": "1996-03-31", 
                 "dateMin": "1996-03-31", 
                 "details": "A bruttó hazai termék (GDP) volumenének éves változása a gazdasági növekedés mérőszáma. A számításnál változatlan (2005. évi) áras, szezonálisan nem igazított GDP adatokat használtunk. A Visegrád-3 átlagot a százalékos növekedés bázisidőszakának változatlan áras, euróban mért GDP-jével súlyoztuk.", 
@@ -303,18 +303,14 @@
     "Inflacio": {
         "charts": {
             "inflation": {
-                "legend" : {
-                    "showBarChart" : true,         
-                    "dateOfBarChart" : "2014-02-28" 
-                },
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-04-30", 
                 "description": [
                     "A fogyasztói kosár árának százalékos változása az előző év azonos hónapjához", 
                     "képest."
                 ], 
                 "title": "Infláció", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-04-30", 
                 "dateFrom": "1997-01-31", 
                 "dateMin": "1997-01-31", 
                 "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
@@ -568,10 +564,6 @@
                 ], 
                 "title": "Folyó fizetési mérleg", 
                 "valueMin": 0, 
-                "legend" : {
-                    "showBarChart" : true,         
-                    "dateOfBarChart" : "2013-09-30" 
-                },
                 "dateTo": "2013-09-30", 
                 "dateFrom": "1995-12-31", 
                 "dateMin": "1995-12-31", 
