@@ -89,8 +89,12 @@
     "Noevekedes": {
         "charts": {
             "gdpgrowth": {
-                "dateMax": "2014-03-31", 
-                "description": [
+                "dateMax": "2014-03-31",
+                  "legend" : {
+                    "showBarChart" : true,         
+                    "dateOfBarChart" : "2014-03-31" 
+                  },         
+                 "description": [
                     "A bruttó hazai termék (GDP) volumenének százalékos változása az előző év azonos", 
                     "negyedévéhez képest."
                 ], 
@@ -303,7 +307,12 @@
     "Inflacio": {
         "charts": {
             "inflation": {
-                "dateMax": "2014-04-30", 
+                "dateMax": "2014-04-30",
+                  "legend" : {
+                    "showBarChart" : true,         
+                    "dateOfBarChart" : "2014-04-30" 
+                  },         
+
                 "description": [
                     "A fogyasztói kosár árának százalékos változása az előző év azonos hónapjához", 
                     "képest."
