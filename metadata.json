@@ -2,13 +2,13 @@
     "Jovedelem": {
         "charts": {
             "gdp": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Egy lakosra jutó éves bruttó hazai termék (GDP) euróban."
                 ], 
                 "title": "GDP/fő (euró)", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-03-31", 
                 "dateMin": "1995-03-31", 
                 "details": "Az euróban kifejezett folyóáras bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. Az adatot az Eurostat szezonalitástól és munkanap-hatástól megtisztította. A negyedéves frekvenciájú adatot 4-gyel szorozva évesítettük. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
@@ -42,7 +42,7 @@
                 "valueMax": 30
             }, 
             "gdpppp": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Egy lakosra jutó éves bruttó hazai termék (GDP) vásárlóerő-paritáson. A GDP", 
                     "vásárlóerő-paritásra történő átszámítása kiszűri az országok", 
@@ -50,7 +50,7 @@
                 ], 
                 "title": "GDP/fő (PPP)", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-12-31", 
                 "dateMin": "1995-12-31", 
                 "details": "A vásárlóerő-paritásra átszámított éves bruttó hazai termék és a népességszám hányadosa. A bruttó hazai termék (GDP) egy ország gazdasági termelésének a mérőszáma. A vásárlóerő-paritásra történő átszámításkor az Eurostat nem csak közös valutára számítja át a GDP-ket, de az országok közötti árszint-különbségeket is kiszűri. Ez úgy történik, hogy a nemzeti valutában kifejezett folyóáras GDP-t egy fiktív pénznemre (PPS, Purchasing Parity Standards) váltja át. Az átváltási árfolyam egy reprezentatív fogyasztói kosár adott országbeli árának és az EU27 átlagára vonatkozó euróban kifejezett árnak a hányadosa. A vásárlóerő-paritáson kifejezett GDP tehát azt fejezi ki, hogy adott országban a bruttó hazai termékből a reprezentatív fogyasztó kosárnak hány az EU27 átlagában 1 eurót érő egységét lehet megvásárolni. A Visegrád-3 átlagot népességszámmal súlyoztuk.", 
@@ -89,14 +89,14 @@
     "Noevekedes": {
         "charts": {
             "gdpgrowth": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "A bruttó hazai termék (GDP) volumenének százalékos változása az előző év azonos", 
                     "negyedévéhez képest."
                 ], 
                 "title": "GDP növekedése", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1996-03-31", 
                 "dateMin": "1996-03-31", 
                 "details": "A bruttó hazai termék (GDP) volumenének éves változása a gazdasági növekedés mérőszáma. A számításnál változatlan (2005. évi) áras, szezonálisan nem igazított GDP adatokat használtunk. A Visegrád-3 átlagot a százalékos növekedés bázisidőszakának változatlan áras, euróban mért GDP-jével súlyoztuk.", 
@@ -130,14 +130,14 @@
                 "valueMax": 30
             }, 
             "industrygrowth": {
-                "dateMax": "2014-04-30", 
+                "dateMax": "2014-09-30", 
                 "description": [
                     "Az ipari termelés volumenének százalékos változása az előző év azonos hónapjához", 
                     "képest. A havi növekedési ütemeket háromhavi mozgóátlagolással simítottuk."
                 ], 
                 "title": "Ipari termelés növekedése", 
                 "valueMin": 0, 
-                "dateTo": "2014-04-30", 
+                "dateTo": "2014-09-30", 
                 "dateFrom": "1996-03-31", 
                 "dateMin": "1996-03-31", 
                 "details": "Az ipari termelés növekedési ütemének számításához az ipari termelés 2000. év átlaga = 100 formájú volumenindexet használtuk, melyet az Eurostat megtisztított a munkanap-hatásoktól. A statisztika a teljes feldolgozóiparon túl a bányászat, kőfejtés és a villamosenergia-, gáz-, gőzellátás, légkondicionálás alágakat is tartalmazza. A havi frekvenciájú százalékos növekedési ütemeket háromhavi visszatekintő mozgóátlagolással simítottuk. A Visegrád-3 átlagot a százalékos változás bázisidőszakának változatlan áras ipari termelésével súlyoztuk. A változatlan (2010. évi) áras ipari termelést a 2010. évi folyóáras euróban mért ipari termelés és a volumenindex idősorok segítségével állítottuk elő.", 
@@ -171,14 +171,14 @@
                 "valueMax": 30
             }, 
             "investment": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "A bruttó beruházás és a bruttó hazai termék (GDP) hányadosa. A negyedéves adatot", 
                     "négy negyedéves mozgóátlagolással simítottuk."
                 ], 
                 "title": "Beruházási ráta", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-12-31", 
                 "dateMin": "1995-12-31", 
                 "details": "A beruházási ráta a beruházási tevékenység GDP-arányos mérőszáma. A számításnál a változatlan (2005. évi) áras és szezonálisan nem igazított bruttó állóeszköz-felhalmozás és GDP adatokat használtuk. A Visegrád-3 átlagot a változatlan áras, euróban mért GDP-vel súlyoztuk.", 
@@ -217,13 +217,13 @@
     "Munkapiac": {
         "charts": {
             "unemployment": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "A munkát keresők aránya a munkát keresők és foglalkoztatottak között."
                 ], 
                 "title": "Munkanélküliségi ráta", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-03-31", 
                 "dateMin": "1995-03-31", 
                 "details": "A munkanélküliség és aktivitás adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak és a 15-74 év közötti népességre vonatkoznak. Az LFS definíciója szerint munkanélküli az a személy, akinek a felmérés hetében nem volt munkája, azonnal munkába tudott volna állni és a megelőző négy hétben aktívan keresett munkát. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonálisan igazítva. A Visegrád-3 átlagot az aktív népességgel súlyoztuk.", 
@@ -257,14 +257,14 @@
                 "valueMax": 30
             }, 
             "laborforce": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "A munkát keresők és foglalkoztatottak aránya a teljes népességhez képest a 15-74", 
                     "éves korosztályban."
                 ], 
                 "title": "Aktivitási ráta", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1998-12-31", 
                 "dateMin": "1998-12-31", 
                 "details": "A munkanélküliség és aktivitás adatok az Európai Unió munkaerő-felméréséből (Labor Force Survey, LFS) származnak és a 15-74 év közötti népességre vonatkoznak. Az LFS definíciója szerint munkanélküli az a személy, akinek a felmérés hetében nem volt munkája, azonnal munkába tudott volna állni és a megelőző négy hétben aktívan keresett munkát. Az aktív népesség a foglalkoztatottak és a munkanélküliek összessége. Negyedéves adat szezonálisan igazítva. A Visegrád-3 átlagot az aktív népességgel súlyoztuk.", 
@@ -303,14 +303,14 @@
     "Inflacio": {
         "charts": {
             "inflation": {
-                "dateMax": "2014-06-30", 
+                "dateMax": "2014-09-30", 
                 "description": [
                     "A fogyasztói kosár árának százalékos változása az előző év azonos hónapjához", 
                     "képest."
                 ], 
                 "title": "Infláció", 
                 "valueMin": 0, 
-                "dateTo": "2014-06-30", 
+                "dateTo": "2014-09-30", 
                 "dateFrom": "1997-01-31", 
                 "dateMin": "1997-01-31", 
                 "details": "A fogyasztói infláció a háztartások által vásárolt termékek és szolgáltatások átlagos árváltozását méri. A harmonizált fogyasztóiár-index (HICP) az Eurostat által egységes módszertan alapján számított fogyasztóiár-index. Az éves növekedés számításánál a szezonálisan nem igazított, 2005. év átlaga = 100 típusú HICP idősort használtuk. A Visegrád-3 átlagot úgy állítottuk elő, hogy az előző év decembere = 100 formájú HICP idősorokat az Eurostat HICP országsúlyaival súlyoztuk, az eredményből 2005. év átlaga = 100 formájú indexet képeztünk, és ebből számítottuk az inflációs rátát.", 
@@ -349,13 +349,13 @@
     "Allamhaztartas": {
         "charts": {
             "governmentdebt": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-03-31", 
                 "description": [
                     "Államadósság a bruttó hazai termék (GDP) százalékában."
                 ], 
                 "title": "Államadósság", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-03-31", 
                 "dateFrom": "2000-03-31", 
                 "dateMin": "2000-03-31", 
                 "details": "Az államháztartási szektor teljes konszolidált bruttó adósságállományának negyedév végi nominális értékét a folyóáras GDP visszatekintő négy negyedéves összegével osztottuk. A bruttó államadósság számbavétele az ESA 95 (European system of accounts, 1995 edition) módszertan alapján történt. Az Euroövezet adósságmutatója nem tartalmazza a tagországok egymásnak nyújtott hiteleit. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
@@ -430,14 +430,14 @@
                 "valueMax": 30
             }, 
             "budgetquaterly": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-03-31", 
                 "description": [
                     "A költségvetés negyedéves egyenlege a bruttó hazai termék (GDP) százalékában.", 
                     "Negatív érték költségvetési hiányt, pozitív érték költségvetési többletet jelez."
                 ], 
                 "title": "Költségvetés egyenlege (negyedéves)", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-03-31", 
                 "dateFrom": "1999-12-31", 
                 "dateMin": "1999-12-31", 
                 "details": "Az államháztartási egyenleg az államháztartási szektor bevételeinek és kiadásainak különbsége az ESA 95 (European system of accounts, 1995 edition) módszertan alapján számítva. A negyedéves frekvenciájú adatot az államháztartási egyenleg és a folyóáras GDP visszatekintő négy negyedéves összegeinek hányadosaként számítottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
@@ -517,14 +517,14 @@
     "Kulsoegyensuly": {
         "charts": {
             "tradebalance": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Az áruk és szolgáltatások külkereskedelmének egyenlege a bruttó hazai termék", 
                     "(GDP) százalékában."
                 ], 
                 "title": "Nettó export", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-03-31", 
                 "dateMin": "1995-03-31", 
                 "details": "Az áruk és szolgáltatások negyedéves kivitelének és behozatalának különbsége a negyedéves GDP értékével osztva. Az egyenleg és a GDP is folyóráras és szezonalitástól és munkanap-hatástól megtisztított. A Visegrád-3 átlag számításánál euróban mért, folyóáras, szezonalitástól és munkanap-hatástól megtisztított GDP-vel súlyoztunk.", 
@@ -558,13 +558,13 @@
                 "valueMax": 30
             }, 
             "currentaccount": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-03-31", 
                 "description": [
                     "A folyó fizetési mérleg egyenlege a bruttó hazai termék (GDP) százalékában."
                 ], 
                 "title": "Folyó fizetési mérleg", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-03-31", 
                 "dateFrom": "1995-12-31", 
                 "dateMin": "1995-12-31", 
                 "details": "Az euróban mért folyó fizetési mérleg egyenleg és az euróban mért folyóáras GDP négy negyedéves gördülő összegeinek hányadosa. Az Euroövezet folyó fizetési mérlege az Euroövezeten kívüli országok összességével szemben értendő. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
@@ -598,7 +598,7 @@
                 "valueMax": 30
             }, 
             "externaldebt": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Nettó külföldi adósság a bruttó hazai termék (GDP) százalékában. A nettó", 
                     "külföldi adósság az összes gazdasági szereplő külfölddel szembeni tartozásának", 
@@ -606,7 +606,7 @@
                 ], 
                 "title": "Külső adósság", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1997-12-31", 
                 "dateMin": "1997-12-31", 
                 "details": "A nettó külföldi adósságállomány adott negyedév végi euróértékét az euróban mért folyóáras GDP visszatekintő négy negyedéves összegével osztottuk. A Visegrád-3 átlag számításánál euróban mért folyóáras GDP-vel súlyoztunk.", 
@@ -645,14 +645,14 @@
     "Versenykepesseg": {
         "charts": {
             "competitiveness": {
-                "dateMax": "2013-12-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Bérköltség az EU27 országaihoz képest a 2005. évhez viszonyítva (emelkedés =", 
                     "javuló versenyképesség)"
                 ], 
                 "title": "Versenyképesség", 
                 "valueMin": 0, 
-                "dateTo": "2013-12-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-03-31", 
                 "dateMin": "1995-03-31", 
                 "details": "A relatív munkaerő-költséget a munkaegység-költség (ULC, unit labor cost) alapú reálárfolyammal mérjük. Ez két gazdasági térség termékegységre jutó munkaerőköltség-szintjét hasonlítja össze azonos valutára átszámítva. Effektív reálárfolyam esetén adott országot főbb külkereskedelmi partnereinek külkereskedelmi forgalommal súlyozott átlagához hasonlítjuk. Jelen esetben ez az EU27 országok súlyozott átlaga. A mutató értékének emelkedése adott ország munkaköltség-alapú versenyképességének javulását mutatja az EU-beli külkereskedelmi partnerek átlagához képest.  A mutatót az Eurostat a teljes nemzetgazdasági munkaegység-költség alapján számítja és 2005. év átlaga = 100 indexformában teszi közzé. A Visegrád-3 átlag számításánál az adott ország exportjának a Visegrád-3 EU27-be irányuló exportján belüli arányával súlyoztunk.", 
@@ -682,13 +682,13 @@
                 "valueMax": 30
             }, 
             "laborproductivity": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-06-30", 
                 "description": [
                     "Egy munkaóra alatt megtermelt jövedelem a 2005. évhez viszonyítva."
                 ], 
                 "title": "Munka termelékenysége", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-06-30", 
                 "dateFrom": "1995-03-31", 
                 "dateMin": "1995-03-31", 
                 "details": "A munka-termelékenységi mutatót az Eurostat a változatlan áras GDP és a ledolgozott munkaórák hányadosaként számítja, szezonalitástól és munkanap-hatástól megtisztítja és 2005. év átlaga = 100 formájú indexként teszi közzé. A Visegrád átlag számításánál a változatlan (2005. évi) áras, euróban mért GDP-vel súlyoztunk.", 
@@ -722,14 +722,14 @@
                 "valueMax": 30
             }, 
             "exportgrowth": {
-                "dateMax": "2014-03-31", 
+                "dateMax": "2014-08-31", 
                 "description": [
                     "Az áruexport előző év azonos hónapjához képest vett százalékos változása, amit", 
                     "háromhavi mozgóátlaggal simítottunk."
                 ], 
                 "title": "Export növekedése", 
                 "valueMin": 0, 
-                "dateTo": "2014-03-31", 
+                "dateTo": "2014-08-31", 
                 "dateFrom": "2000-03-31", 
                 "dateMin": "2000-03-31", 
                 "details": "A teljes áruexport-forgalom euróban kifejezett értékének a megelőző év azonos havához képest vett százalékos változása. A havi frekvenciájú növekedési ütemeket háromhavi visszatekintő mozgóátlagolással simítottuk. A Visegrád átlag számításánál a százalékos változás bázisidőszakának euróban kifejezett exportértékével súlyoztunk.", 
@@ -768,14 +768,14 @@
     "Penzugyipiacok": {
         "charts": {
             "exchangerate": {
-                "dateMax": "2014-05-31", 
+                "dateMax": "2014-09-30", 
                 "description": [
                     "Nemzeti valuta árfolyama az euróval szemben (emelkedés = nemzeti valuta", 
                     "leértékelődése), 2005. januárhoz viszonyítva."
                 ], 
                 "title": "Euróárfolyam", 
                 "valueMin": 0, 
-                "dateTo": "2014-05-31", 
+                "dateTo": "2014-09-30", 
                 "dateFrom": "1995-01-31", 
                 "dateMin": "1995-01-31", 
                 "details": "A nominális árfolyam egy euro nemzeti valutában kifejezett értéke. A havi átlagos árfolyamok idősorait 2005. január átlaga = 100 formájú indexre számítottuk át. Szlovákiát euroövezeti tagsága miatt nem szerepeltetjük.", 
@@ -797,13 +797,13 @@
                 "valueMax": 30
             }, 
             "longtermyield": {
-                "dateMax": "2014-04-30", 
+                "dateMax": "2014-09-30", 
                 "description": [
                     "Nemzeti valutában jegyzett hosszú lejáratú államkötvények éves hozama."
                 ], 
                 "title": "Hosszútávú kamatok", 
                 "valueMin": 0, 
-                "dateTo": "2014-04-30", 
+                "dateTo": "2014-09-30", 
                 "dateFrom": "1995-09-30", 
                 "dateMin": "1995-09-30", 
                 "details": "Tízéves lejáratú, nemzeti valutában denominált államkötvények másodpiaci, adózás előtti éves hozamainak havi frekvenciájú idősora. Az Euroövezetre vonatkozó idősor előállításánál az Eurostat az egyes tagországok tízéves lejáratú államkötvény-állományainak nominális értékével súlyoz. A Visegrád-3 átlag számításánál az euróban mért folyóáras GDP két negyedévvel korábbról visszatekintő négy negyedéves összegével súlyoztunk.", 
